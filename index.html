@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASSIGNMENT WEEK 2</title>
+</head>
+<body>
+<h1>Ordered List</h1>    
+    <ol type="I">
+        <li>Kelly</li>
+        <li>Dier</li>
+        <li>Lewis</li>
+        <li>Hamilton</li>
+    </ol> 
+
+<div>
+    <label for="image">The Hills</label>
+    <img src="Assets/pexels-kovyrina-30585887.jpg" alt="The Hills">
+    <img src="Assets/pexels-leefinvrede-31147784.jpg" alt="Another image">
+</div>   
+
+<div>
+    <table>
+        <caption>Contact Information</caption>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>ADDRESS</th>
+                <th>MOBILE</th>
+                <th>EMAIL</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kelly</td>
+                <td>00400</td>
+                <td>987654</td>
+                <td>kelly@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Dier</td>
+                <td>00500</td>
+                <td>00987654</td>
+                <td>dier@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Lewis</td>
+                <td>00800</td>
+                <td>345678</td>
+                <td>lewis@gmail.com</td>
+            </tr>
+            <tr>
+                <td>Hamilton</td>
+                <td>004567</td>
+                <td>765567765</td>
+                <td>hamilton@gmail.com</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div>
+    <form action="#" method="post">
+        {% csrf_token %}
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Please enter your name" id="name">
+        
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email">
+        
+        <label for="date">Date</label>
+        <input type="date" name="date" id="date" placeholder="Provide your date details">
+        
+        <label for="password">Password</label>
+        <input type="password" name="password" placeholder="Please enter your password" id="password">
+        
+        <label for="terms">
+            <input type="checkbox" name="terms" id="terms" value="Do You Agree to the terms and conditions?">
+            Do You Agree to the terms and conditions?
+        </label>
+        
+        <label for="receive-emails">
+            <input type="radio" name="communication" id="receive-emails" value="receive emails">
+            Receive emails
+        </label>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+
+</body>
+</html>
